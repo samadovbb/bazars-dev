@@ -1,0 +1,3 @@
+admin/    --> bazars admin template
+vendor/    --> bazars vendor template
+main/    --> bazars main page template
