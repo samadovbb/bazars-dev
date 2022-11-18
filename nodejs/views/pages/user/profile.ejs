@@ -1,0 +1,661 @@
+<%- include('../../includes/head.ejs') %>
+<body>
+<div class="backdrop"></div>
+<a class="backtop fas fa-arrow-up" href="#"></a>
+
+
+<%- include('../../includes/navbar.ejs') %>
+
+<!--=====================================
+            PRODUCT VIEW START
+=======================================-->
+<div class="modal fade" id="product-view">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button class="modal-close icofont-close" data-bs-dismiss="modal"></button>
+            <div class="product-view">
+                <div class="row">
+
+                    <div class="col-md-12 col-lg-12">
+                        <div class="view-details">
+                            <h3 class="view-name">
+                                <a href="product-video.html">Bu yerda check bo'ladi</a>
+                            </h3>
+
+                            <p class="view-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit non tempora magni repudiandae sint suscipit tempore quis maxime explicabo veniam eos reprehenderit fuga</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--=====================================
+            PRODUCT VIEW END
+=======================================-->
+
+
+<!--=====================================
+            MODAL EDIT FORM START
+=======================================-->
+<!-- profile edit form -->
+<div class="modal fade" id="profile-edit" style="margin: auto;">
+    <div class="modal-dialog modal-dialog-centered" style="width: 100%;">
+        <div class="modal-content " style="width: 100%;">
+            <button class="modal-close" data-bs-dismiss="modal"><i class="icofont-close"></i></button>
+            <div class="product-view" style="width: 100%;">
+                <form action="" method="post" class="modal-form row" enctype="multipart/form-data"  style="width: 100%;">
+                    <div class="form-title col-lg-12">
+                        <h3>Tahrirlash</h3>
+                    </div>
+                    <input name="id" hidden type="text" value="<%= user.CustomerID %>">
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Rasm</label>
+                        <input name="ImagePath" class="form-control" type="file">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Ism</label>
+                        <input name="Firstname" class="form-control" type="text" value="<%= user.Firstname %>">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Familiya</label>
+                        <input name="Lastname" class="form-control" type="text" value="<%= user.Lastname %>">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Sharif</label>
+                        <input name="MiddleName" class="form-control" type="text" value="<%= user.MiddleName %>">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Email</label>
+                        <input name="Email" class="form-control" type="text" value="<%= user.Email %>">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Tug'ilgan sana</label>
+                        <input name="BirthDate" class="form-control" type="date" value="<%= user.BirthDate %>">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Telefon raqam</label>
+                        <input name="PhoneNumber" class="form-control" type="text" value="<%= user.PhoneNumber %>">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Qo'shimcha telefon raqam</label>
+                        <input name="AdditionalPhoneNumber" class="form-control" type="text" value="<%= user.AdditionalPhoneNumber %>">
+                    </div>
+                    <button class="form-btn" type="submit">saqlash</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- contact edit form -->
+<div class="modal fade" id="contact-edit">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button class="modal-close" data-bs-dismiss="modal"><i class="icofont-close"></i></button>
+            <form class="modal-form">
+                <div class="form-title">
+                    <h3>edit contact info</h3>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">title</label>
+                    <select class="form-select">
+                        <option value="primary" selected>primary</option>
+                        <option value="secondary">secondary</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">number</label>
+                    <input class="form-control" type="text" value="+8801838288389">
+                </div>
+                <button class="form-btn" type="submit">save contact info</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- address edit form -->
+<div class="modal fade" id="address-edit">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button class="modal-close" data-bs-dismiss="modal"><i class="icofont-close"></i></button>
+            <form class="modal-form">
+                <div class="form-title">
+                    <h3>edit address info</h3>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">title</label>
+                    <select class="form-select">
+                        <option value="home" selected>home</option>
+                        <option value="office">office</option>
+                        <option value="Bussiness">Bussiness</option>
+                        <option value="academy">academy</option>
+                        <option value="others">others</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">address</label>
+                    <textarea class="form-control" placeholder="jalkuri, fatullah, narayanganj-1420. word no-09, road no-17/A"></textarea>
+                </div>
+                <button class="form-btn" type="submit">save address info</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--=====================================
+            MODAL EDIT FORM END
+=======================================-->
+<!--=====================================
+                  MODAL ADD FORM START
+      =======================================-->
+<!-- contact add form -->
+<div class="modal fade" id="contact-add">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button class="modal-close" data-bs-dismiss="modal"><i class="icofont-close"></i></button>
+            <form class="modal-form">
+                <div class="form-title">
+                    <h3>add new contact</h3>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">title</label>
+                    <select class="form-select">
+                        <option selected>choose title</option>
+                        <option value="primary">primary</option>
+                        <option value="secondary">secondary</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">number</label>
+                    <input class="form-control" type="text" placeholder="Enter your number">
+                </div>
+                <button class="form-btn" type="submit">save contact info</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- address add form -->
+<div class="modal fade" id="address-add" style="margin: auto;">
+    <div class="modal-dialog modal-dialog-centered" style="width: 100%;">
+        <div class="modal-content " style="width: 100%;">
+            <button class="modal-close" data-bs-dismiss="modal"><i class="icofont-close"></i></button>
+            <div class="product-view" style="width: 100%;">
+                <form class="modal-form row"  style="width: 100%;">
+                    <div class="form-title col-lg-12">
+                        <h3>Yangi manzil qo'shish</h3>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Manzil nomi:</label>
+                        <input type="text" class="form-control" placeholder="Uy, ofis, boshqalar">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Viloyat</label>
+                        <select class="form-select">
+                            <option selected>Viloyatni tanlang</option>
+                            <option value="Toshkent">Toshkent</option>
+                            <option value="office">office</option>
+                            <option value="Bussiness">Bussiness</option>
+                            <option value="academy">academy</option>
+                            <option value="others">others</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Tuman / Shahar</label>
+                        <select class="form-select">
+                            <option selected>Tumanni tanlang</option>
+                            <option value="Yunusobod">Yunusobod</option>
+                            <option value="office">office</option>
+                            <option value="Bussiness">Bussiness</option>
+                            <option value="academy">academy</option>
+                            <option value="others">others</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Ko'cha nomi:</label>
+                        <input type="text" class="form-control" placeholder="Ko'cha yoki qishloq nomi">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Kv, uy manzili:</label>
+                        <input type="text" class="form-control" placeholder="Kv va uy raqami">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="form-label">Mo'ljal</label>
+                        <textarea class="form-control" placeholder="Mo'ljalni aniqroq kiriting" style="height: 50px;"></textarea>
+                    </div>
+                    <button class="form-btn" type="submit">Saqlash</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- payment add form -->
+<div class="modal fade" id="payment-add">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button class="modal-close" data-bs-dismiss="modal"><i class="icofont-close"></i></button>
+            <form class="modal-form">
+                <div class="form-title">
+                    <h3>Karta qo'shish</h3>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Karta raqami</label>
+                    <input class="form-control" type="text" placeholder="**** **** **** ****">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Amal qilish muddati</label>
+                    <input class="form-control" type="text" placeholder="**/**">
+                </div>
+                <button class="form-btn" type="submit">Saqlash</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--=====================================
+            MODAL ADD FORM END
+=======================================-->
+
+
+<!--=====================================
+            COMPARE PART START
+=======================================-->
+<section class="inner-section compare-part" style="margin-top: 30px;">
+    <div class="container">
+        <div class="row"  style="margin-bottom: 50px;">
+            <%- include('./includes/sidenav.ejs') %>
+            <div class="col-lg-9 " >
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="account-card">
+                            <div class="account-title">
+                                <h4>Shaxsiy ma'lumotlar</h4>
+                                <button data-bs-toggle="modal" data-bs-target="#profile-edit">Tahrirlash</button>
+                            </div>
+                            <div class="account-content">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <div class="profile-image">
+                                            <a href="#"><img src="/upload/userImages/<%= user.ImagePath %>" alt="user"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label class="form-label">FIO</label>
+                                            <input disabled class="form-control" type="text" value="<%= user.FullName  %>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Email</label>
+                                            <input disabled class="form-control" type="email" value="<%= user.Email %>">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="profile-btn">
+                                            <a href="/user/change">Parol o'zgartirish</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 ">
+                                        <div class="form-group">
+                                            <label class="form-label">Tug'ilgan sana</label>
+                                            <input disabled class="form-control" type="date" value="<%= user.BirthDate %>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Telefon raqam</label>
+                                            <input disabled class="form-control" type="text" value="<%= user.PhoneNumber %>">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="form-group">
+                                            <label class="form-label">Qo'chimcha telefon</label>
+                                            <input disabled class="form-control" type="text" value="<%= user.AdditionalPhoneNumber %>">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-12">
+                        <div class="account-card">
+                            <div class="account-title">
+                                <h4>contact number</h4>
+                                <button data-bs-toggle="modal" data-bs-target="#contact-add">add contact</button>
+                            </div>
+                            <div class="account-content">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4 alert fade show">
+                                        <div class="profile-card contact active">
+                                            <h6>primary</h6>
+                                            <p>+8801838288389</p>
+                                            <ul>
+                                                <li><button class="edit icofont-edit" title="Edit This" data-bs-toggle="modal" data-bs-target="#contact-edit"></button></li>
+                                                <li><button class="trash icofont-ui-delete" title="Remove This" data-bs-dismiss="alert"></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 alert fade show">
+                                        <div class="profile-card contact">
+                                            <h6>secondary</h6>
+                                            <p>+8801941101915</p>
+                                            <ul>
+                                                <li><button class="edit icofont-edit" title="Edit This" data-bs-toggle="modal" data-bs-target="#contact-edit"></button></li>
+                                                <li><button class="trash icofont-ui-delete" title="Remove This" data-bs-dismiss="alert"></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 alert fade show">
+                                        <div class="profile-card contact">
+                                            <h6>secondary</h6>
+                                            <p>+8801747875727</p>
+                                            <ul>
+                                                <li><button class="edit icofont-edit" title="Edit This" data-bs-toggle="modal" data-bs-target="#contact-edit"></button></li>
+                                                <li><button class="trash icofont-ui-delete" title="Remove This" data-bs-dismiss="alert"></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-12">
+                        <div class="account-card">
+                            <div class="account-title">
+                                <h4>Manzillarim</h4>
+                                <button data-bs-toggle="modal" data-bs-target="#address-add">Manzil qo'shish</button>
+                            </div>
+                            <div class="account-content">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4 alert fade show">
+                                        <div class="profile-card address active">
+                                            <h6>Home</h6>
+                                            <p>jalkuri, fatullah, narayanganj-1420. word no-09, road no-17/A</p>
+                                            <ul class="user-action">
+                                                <li><button class="edit icofont-edit" title="Edit This" data-bs-toggle="modal" data-bs-target="#address-add"></button></li>
+                                                <li><button class="trash icofont-ui-delete" title="Remove This" data-bs-dismiss="alert"></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 alert fade show">
+                                        <div class="profile-card address">
+                                            <h6>Office</h6>
+                                            <p>east tejturi bazar, dhaka-1200. word no-04, road no-13/c, house no-4/b</p>
+                                            <ul class="user-action">
+                                                <li><button class="edit icofont-edit" title="Edit This" data-bs-toggle="modal" data-bs-target="#address-add"></button></li>
+                                                <li><button class="trash icofont-ui-delete" title="Remove This" data-bs-dismiss="alert"></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 alert fade show">
+                                        <div class="profile-card address">
+                                            <h6>Bussiness</h6>
+                                            <p>kawran bazar, dhaka-1100. word no-02, road no-13/d, house no-7/m</p>
+                                            <ul class="user-action">
+                                                <li><button class="edit icofont-edit" title="Edit This" data-bs-toggle="modal" data-bs-target="#address-add"></button></li>
+                                                <li><button class="trash icofont-ui-delete" title="Remove This" data-bs-dismiss="alert"></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="account-card mb-0">
+                            <div class="account-title">
+                                <h4>Kartalarim</h4>
+                                <button data-bs-toggle="modal" data-bs-target="#payment-add">karta qo'shish</button>
+                            </div>
+                            <div class="account-content">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4 alert fade show">
+                                        <div class="payment-card payment active">
+                                            <img src="/images/payment/png/01.png" alt="payment">
+                                            <h4>card number</h4>
+                                            <p>
+                                                <span>****</span>
+                                                <span>****</span>
+                                                <span>****</span>
+                                                <sup>1876</sup>
+                                            </p>
+                                            <h5>miron mahmud</h5>
+                                            <button class="trash icofont-ui-delete" title="Remove This" data-bs-dismiss="alert"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 alert fade show">
+                                        <div class="payment-card payment">
+                                            <img src="/images/payment/png/02.png" alt="payment">
+                                            <h4>card number</h4>
+                                            <p>
+                                                <span>****</span>
+                                                <span>****</span>
+                                                <span>****</span>
+                                                <sup>1876</sup>
+                                            </p>
+                                            <h5>miron mahmud</h5>
+                                            <button class="trash icofont-ui-delete" title="Remove This" data-bs-dismiss="alert"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 alert fade show">
+                                        <div class="payment-card payment">
+                                            <img src="/images/payment/png/03.png" alt="payment">
+                                            <h4>card number</h4>
+                                            <p>
+                                                <span>****</span>
+                                                <span>****</span>
+                                                <span>****</span>
+                                                <sup>1876</sup>
+                                            </p>
+                                            <h5>miron mahmud</h5>
+                                            <button class="trash icofont-ui-delete" title="Remove This" data-bs-dismiss="alert"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+<!--=====================================
+            COMPARE PART END
+=======================================-->
+
+
+<!--=====================================
+            NEWSLETTER PART START
+=======================================-->
+<section class="news-part" style="background: url(images/newsletter.jpg) no-repeat center;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5 col-lg-6 col-xl-7">
+                <div class="news-text">
+                    <h2>Get 20% Discount for Subscriber</h2>
+                    <p>Lorem ipsum dolor consectetur adipisicing accusantium</p>
+                </div>
+            </div>
+            <div class="col-md-7 col-lg-6 col-xl-5">
+                <form class="news-form">
+                    <input type="text" placeholder="Enter Your Email Address">
+                    <button><span><i class="icofont-ui-email"></i>Subscribe</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=====================================
+            NEWSLETTER PART END
+=======================================-->
+
+
+<!--=====================================
+            INTRO PART START
+=======================================-->
+<section class="intro-part">
+    <div class="container">
+        <div class="row intro-content">
+            <div class="col-sm-6 col-lg-3">
+                <div class="intro-wrap">
+                    <div class="intro-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="intro-content">
+                        <h5>free home delivery</h5>
+                        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="intro-wrap">
+                    <div class="intro-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="intro-content">
+                        <h5>instant return policy</h5>
+                        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="intro-wrap">
+                    <div class="intro-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="intro-content">
+                        <h5>quick support system</h5>
+                        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="intro-wrap">
+                    <div class="intro-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="intro-content">
+                        <h5>secure payment way</h5>
+                        <p>Lorem ipsum dolor sit amet adipisicing elit nobis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=====================================
+            INTRO PART END
+=======================================-->
+
+
+<!--=====================================
+             FOOTER PART START
+=======================================-->
+<footer class="footer-part">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xl-3">
+                <div class="footer-widget">
+                    <a class="footer-logo" href="#">
+                        <img src="/images/logo.png" alt="logo">
+                    </a>
+                    <p class="footer-desc">Adipisci asperiores ipsum ipsa repellat consequatur repudiandae quisquam assumenda dolor perspiciatis sit ipsum dolor amet.</p>
+                    <ul class="footer-social">
+                        <li><a class="icofont-facebook" href="#"></a></li>
+                        <li><a class="icofont-twitter" href="#"></a></li>
+                        <li><a class="icofont-linkedin" href="#"></a></li>
+                        <li><a class="icofont-instagram" href="#"></a></li>
+                        <li><a class="icofont-pinterest" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="footer-widget contact">
+                    <h3 class="footer-title">contact us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="icofont-ui-email"></i>
+                            <p>
+                                <span>support@greeny.com</span>
+                                <span>carrer@greeny.com</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i class="icofont-ui-touch-phone"></i>
+                            <p>
+                                <span>+120 279 532 13</span>
+                                <span>+120 279 532 14</span>
+                            </p>
+                        </li>
+                        <li>
+                            <i class="icofont-location-pin"></i>
+                            <p>1Hd- 50, 010 Avenue, NY 90001 United States</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="footer-widget">
+                    <h3 class="footer-title">quick Links</h3>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Order History</a></li>
+                            <li><a href="#">Order Tracking</a></li>
+                            <li><a href="#">Best Seller</a></li>
+                            <li><a href="#">New Arrivals</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Location</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Carrer</a></li>
+                            <li><a href="#">Faq</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <div class="footer-widget">
+                    <h3 class="footer-title">Download App</h3>
+                    <p class="footer-desc">Lorem ipsum dolor sit amet tenetur dignissimos ipsum eligendi autem obcaecati minus ducimus totam reprehenderit exercitationem!</p>
+                    <div class="footer-app">
+                        <a href="#"><img src="/images/google-store.png" alt="google"></a>
+                        <a href="#"><img src="/images/app-store.png" alt="app"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-bottom">
+                    <p class="footer-copytext">&copy;  All Copyrights Reserved by <a target="_blank" href="https://themeforest.net/user/mironcoder">Mironcoder</a></p>
+                    <div class="footer-card">
+                        <a href="#"><img src="/images/payment/jpg/01.jpg" alt="payment"></a>
+                        <a href="#"><img src="/images/payment/jpg/02.jpg" alt="payment"></a>
+                        <a href="#"><img src="/images/payment/jpg/03.jpg" alt="payment"></a>
+                        <a href="#"><img src="/images/payment/jpg/04.jpg" alt="payment"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--=====================================
+              FOOTER PART END
+=======================================-->
+
+<%- include('../../includes/end.ejs') %>
+
+
+

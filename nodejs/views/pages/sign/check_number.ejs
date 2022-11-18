@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Datatech Solutions">
+    <meta name="email" content="samadovbb@mail.ru">
+    <meta name="profile" content="https://t.me/samadovbb">
+
+    <meta name="name" content="Bazars">
+    <meta name="title" content="Bazars - Bu yerda Jonibek aytgan Title bo'ladi">
+    <meta name="keywords" content="organic, food, shop, ecommerce, store, html, bootstrap, template, agriculture, vegetables, webshop, farm, grocery, natural, online store, marketplace, vendor">
+
+    <title>Bazars.uz </title>
+    <!-- FAVICON -->
+    <link rel="icon" href="/images/Bazars_logo-removebg-preview.png">
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="fonts/icofont/icofont.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/fontawesome.min.css">
+
+    <!-- VENDOR -->
+    <link rel="stylesheet" href="/vendor/venobox/venobox.min.css">
+    <link rel="stylesheet" href="/vendor/slickslider/slick.min.css">
+    <link rel="stylesheet" href="/vendor/niceselect/nice-select.min.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/user-auth.css">
+</head>
+
+<section class="user-form-part">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                <div class="user-form-logo">
+                    <a href="/"><img src="/images/Bazars_logo-removebg-preview.png" height="120px" style="object-fit: contain;" width="120px"  alt="logo"></a>
+                </div>
+                <div class="user-form-card">
+                    <div class="user-form-title">
+                        <h2 style="font-size: 20px;text-transform: none;">Telefon raqamingizni kiriting</h2>
+                        <p class="text-danger"><?=$error?></p>
+                    </div>
+                    <form class="user-form" method="POST" action="">
+                        <div class="form-group">
+                            <input type="text" name="PhoneNumber" class="form-control" placeholder="998 99 999 99 99" value="998">
+                        </div>
+                        <div class="form-button">
+                            <button type="submit">Keyingisi </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="user-form-remind">
+                    <p><a href="/" style="text-transform: none;">Bosh sahifaga qaytish</a></p>
+                </div>
+                <div class="user-form-footer">
+                    <p>Bazars | &COPY; Copyright by <a href="#"> DATATECH TEAM </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include('../../includes/end.ejs') %>
