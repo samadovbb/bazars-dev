@@ -1,0 +1,166 @@
+<%- include('./includes/head.ejs') %>
+<style>
+    .hidden-div{
+        display: none;
+    }
+</style>
+<body class="layout-light side-menu overlayScroll">
+
+<main class="main-content">
+    <div class="container-fluid">
+        <div class=" checkout wizard8 global-shadow border px-sm-50 px-20 mb-30 bg-white radius-xl w-100">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-5">
+                            <div class="checkout-progress-indicator ">
+                                <div class="checkout-progress justify-content-center px-0">
+                                    <div class="step completed" id="1">
+                                        <span class="las la-check"></span>
+                                    </div>
+                                    <div class="step completed" id="1">
+                                        <span class="las la-check"></span>
+                                    </div>
+                                    <div class="step current" id="3">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="step" id="4">
+                                        <span>4</span>
+                                    </div>
+                                </div>
+                                <div class="card-header border-bottom-0">
+                                    <h4>Account yarating</h4>
+                                    <div class="div">
+                                        <img class="svg w-100" src="/img/svg/progress1.svg" alt="img">
+                                    </div>
+                                </div>
+                            </div><!-- checkout -->
+                        </div>
+                        <div class="col-xl-7 col-lg-8 col-sm-10">
+                            <div class="card checkout-shipping-form h-100vh">
+                                <div class="card-header border-bottom-0 align-content-start pb-sm-0 pb-1 px-0">
+                                    <h4 class="fw-500">3. Ro'yxatga olish shakli</h4>
+                                    <p class="text-danger" id="form-error"></p>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="edit-profile__body">
+                                        <form action="" method="POST" onsubmit="sendStp3(event)">
+                                            <div class="form-group">
+                                                <label for="name1">Biznesni ro'yxatga olish shakli</label>
+                                                <select name="Personality" id="sel-name1" class="form-control">
+                                                    <option value="0">Tanlanmagan</option>
+                                                    <option value="entity">Yuridik shaxs</option>
+                                                    <option value="person">Jismoniy shaxs</option>
+                                                </select>
+                                            </div>
+                                            <div class="yuridik hidden-div">
+                                                <div class="form-group">
+                                                    <label for="name2">STIR</label>
+                                                    <input type="text" class="form-control" id="STIR_entity" placeholder="1234567">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name2">IFUT kodi</label>
+                                                    <input type="text" class="form-control" id="IFUT" placeholder="1234567">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name2">Rasmiy manzili</label>
+                                                    <input type="text" class="form-control" id="Address" placeholder="Toshkent shahar Yunusobod tumani 3-uy">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name2">Ro'yxatdan o'tganlik haqida guvohnoma faylini yuklang</label>
+                                                    <input type="file" class="form-control" id="file">
+                                                </div>
+                                            </div>
+                                            <div class="jismoniy hidden-div">
+                                                <div class="form-group">
+                                                    <label for="name1">Familiyangiz</label>
+                                                    <input type="text" class="form-control" id="Firstname" placeholder="Samadov">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name2">Ismingiz</label>
+                                                    <input type="text" class="form-control" id="Lastname" placeholder="Bobir">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name2">Otchestvangiz</label>
+                                                    <input type="text" class="form-control" id="MiddleName" placeholder="Bahodir o'g'li">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name2">STIR</label>
+                                                    <input type="text" class="form-control" id="STIR_person" placeholder="1234567">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name2">JSHSHIR</label>
+                                                    <input type="text" class="form-control" id="PIN" placeholder="12345678901234">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name2">Ro'yxatdan o'tganlik haqida guvohnoma raqami</label>
+                                                    <input type="text" class="form-control" id="CertificateNumber" placeholder="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="name2">Ro'yxatdan o'tganlik haqida guvohnoma faylini yuklang</label>
+                                                    <input type="file" class="form-control" id="name2">
+                                                </div>
+                                            </div>
+                                            <div class="button-group d-flex pt-3 mb-20 justify-content-between flex-wrap">
+                                                <a href="stp3" class="btn btn-light btn-default btn-squared fw-400 text-capitalize"><i class="las la-arrow-left mr-10"></i>Oldingi qadam</a>
+                                                <button type="submit" class="btn btn-primary btn-default btn-squared text-capitalize text-white">Keyingi qadam<i class="ml-10 mr-0 las la-arrow-right"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div><!-- ends: card -->
+                        </div><!-- ends: col -->
+                    </div>
+                </div><!-- ends: col -->
+            </div>
+        </div><!-- End: .global-shadow-->
+    </div>
+</main>
+<div id="overlayer">
+        <span class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </span>
+</div>
+<div class="overlay-dark-sidebar"></div>
+
+<%- include('./includes/end.ejs') %>
+<script>
+    document.querySelector("#sel-name1").addEventListener("change", function(event){
+            if (event.target.value=="entity") {
+                document.querySelector(".jismoniy").classList.add("hidden-div");
+                document.querySelector(".yuridik").classList.remove("hidden-div");
+            } else if (event.target.value=="person") {
+                document.querySelector(".yuridik").classList.add("hidden-div");
+                document.querySelector(".jismoniy").classList.remove("hidden-div");
+            } else {
+                document.querySelector(".yuridik").classList.add("hidden-div");
+                document.querySelector(".jismoniy").classList.add("hidden-div");
+            }
+        })
+        function aftersendStp3(resp){
+            if (resp.status==200){
+                window.location.href='./stp4';
+            } else {
+                document.querySelector("#form-error").innerText=resp.response.message
+            }
+        }
+        function sendStp3(event){
+            event.preventDefault()
+            var Personality=document.querySelector("#sel-name1").value;
+            var Firstname=document.querySelector("#Firstname").value;
+            var Lastname=document.querySelector("#Lastname").value;
+            var MiddleName=document.querySelector("#MiddleName").value;
+            var STIR=document.querySelector(`#STIR_${Personality}`).value;
+            var PIN=document.querySelector(`#PIN`).value;
+            var CertificateNumber=document.querySelector(`#CertificateNumber`).value;
+            var IFUTCode=document.querySelector(`#IFUT`).value;
+            var Address=document.querySelector(`#Address`).value;
+            var body={Personality,Firstname,Lastname,MiddleName,STIR,PIN,CertificateNumber,IFUTCode,Address}
+            sendReq('./stp3', 'POST',body,aftersendStp3);
+        }
+</script>

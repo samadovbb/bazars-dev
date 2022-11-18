@@ -1,0 +1,68 @@
+<%- include('./includes/head.ejs') %>
+
+<body class="layout-light side-menu overlayScroll">
+
+<main class="main-content">
+    <div class="container-fluid">
+        <div class=" checkout wizard8 global-shadow border px-sm-50 px-20 mb-30 bg-white radius-xl w-100">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-5">
+                            <div class="checkout-progress-indicator ">
+                                <div class="card-header border-bottom-0">
+                                    <h4>Accountingizga kiring</h4>
+                                    <div class="div">
+                                        <img class="svg w-100" src="/img/svg/progress1.svg" alt="img">
+                                    </div>
+                                </div>
+                            </div><!-- checkout -->
+                        </div>
+                        <div class="col-xl-7 col-lg-8 col-sm-10">
+                            <div class="card checkout-shipping-form h-100vh">
+                                <div class="card-header border-bottom-0 align-content-start pb-sm-0 pb-1 px-0">
+                                    <p class="text-danger" id="form-error"></p>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="edit-profile__body">
+                                        <form action="" method="post">
+                                            <div class="form-group">
+                                                <label for="name1">Login</label>
+                                                <input name="login" type="text" class="form-control" id="login" placeholder="Username">
+                                            </div>
+                                            <div class="form-group create-passord">
+                                                <label for="password">Parol</label>
+                                                <input name="password" type="password" class="form-control" id="password" placeholder="Password">
+                                            </div>
+                                            <div class="button-group d-flex pt-3 mb-20 justify-content-between flex-wrap">
+                                                <a href="./stp1" class="btn btn-link">Ro'yxatdan o'tish</a>
+                                                <button type="submit" class="btn btn-primary btn-default btn-squared text-capitalize text-white">Tizimga kirish<i class="ml-10 mr-0 las la-arrow-right"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div><!-- ends: card -->
+                        </div><!-- ends: col -->
+                    </div>
+                </div><!-- ends: col -->
+            </div>
+        </div><!-- End: .global-shadow-->
+    </div>
+</main>
+
+<div id="overlayer">
+        <span class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </span>
+</div>
+<div class="overlay-dark-sidebar"></div>
+
+<%- include('./includes/end.ejs') %>
+<script>
+
+</script>

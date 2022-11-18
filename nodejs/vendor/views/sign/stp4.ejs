@@ -1,0 +1,132 @@
+<%- include('./includes/head.ejs') %>
+<body class="layout-light side-menu overlayScroll">
+    <main class="main-content">
+            <div class="container-fluid">
+                <div class=" checkout wizard8 global-shadow border px-sm-50 px-20 mb-30 bg-white radius-xl w-100">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-5">
+                                    <div class="checkout-progress-indicator ">
+                                        <div class="checkout-progress justify-content-center px-0">
+                                            <div class="step completed" id="1">
+                                                <span class="las la-check"></span>
+                                            </div>
+                                            <div class="step completed" id="1">
+                                                <span class="las la-check"></span>
+                                            </div>
+                                            <div class="step completed" id="3">
+                                                <span class="las la-check"></span>
+                                            </div>
+                                            <div class="step current" id="4">
+                                                <span>4</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-header border-bottom-0">
+                                            <h4>Account yarating</h4>
+                                            <div class="div">
+                                                <img class="svg w-100" src="/img/svg/progress1.svg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div><!-- checkout -->
+                                </div>
+                                <div class="col-xl-7 col-lg-8 col-sm-10">
+                                    <div class="card checkout-shipping-form h-100vh">
+                                        <div class="card-header border-bottom-0 align-content-start pb-sm-0 pb-1 px-0">
+                                            <h4 class="fw-500">4. Hisob-kitob hisobvaraqlari</h4>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <div class="edit-profile__body">
+                                                <form>
+                                                    <div id="bank-creditials">
+                                                        <div class="row">
+                                                            <div class="form-group col-6">
+                                                                <label for="name1">Bank nomi</label>
+                                                                <input type="text" id="name1" name="name1[]" class="form-control">
+                                                            </div>
+                                                            <div class="form-group col-6">
+                                                                <label for="name1">Bank kodi (MFO)</label>
+                                                                <input type="text" id="name1" name="name2[]" class="form-control">
+                                                            </div>
+                                                            <div class="form-group col-6">
+                                                                <label for="name1">Hisob raqam</label>
+                                                                <input type="text" id="name1" name="name3[]" class="form-control">
+                                                            </div>
+                                                            <div class="form-group col-6 form-group-calender">
+                                                                <label for="name1">Hisob raqam nomi</label>
+                                                                <div class="position-relative">
+                                                                    <input type="text" class="form-control" id="name4" name="name4[]">
+                                                                    <a href="#" onclick="rekRm(event)"><i class="text-danger fas fa-times"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" onclick="rekAdd()" class="btn btn-block btn-outline-light"> <i class="fa fa-plus"></i> Yangi hisob raqam qo'shish</button>
+                                                    <div class="button-group d-flex pt-3 mb-20 justify-content-between flex-wrap">
+                                                        <a href="singup-vendor-s3.html" class="btn btn-light btn-default btn-squared fw-400 text-capitalize"><i class="las la-arrow-left mr-10"></i>Oldingi qadam</a>
+                                                        <a href="singup-vendor-s4.html" class="btn btn-primary btn-default btn-squared text-capitalize text-white">Keyingi qadam<i class="ml-10 mr-0 las la-arrow-right"></i></a>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div><!-- ends: card -->
+                                </div><!-- ends: col -->
+                            </div>
+                        </div><!-- ends: col -->
+                    </div>
+                </div><!-- End: .global-shadow-->
+        </div>
+    </main>
+    <div id="overlayer">
+        <span class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </span>
+    </div>
+    <div class="overlay-dark-sidebar"></div>
+    <script>
+        function rekAdd(){
+            var rCount=document.querySelectorAll("#bank-creditials .row").length;
+            if (rCount<5){
+                document.querySelector("#bank-creditials").innerHTML+=`<div class="row">
+                                                        <div class="form-group col-6">
+                                                            <label for="name1">Bank nomi</label>
+                                                            <input type="text" id="name1" name="name1[]" class="form-control">
+                                                        </div>
+                                                        <div class="form-group col-6">
+                                                            <label for="name1">Bank kodi (MFO)</label>
+                                                            <input type="text" id="name1" name="name2[]" class="form-control">
+                                                        </div>
+                                                        <div class="form-group col-6">
+                                                            <label for="name1">Hisob raqam</label>
+                                                            <input type="text" id="name1" name="name3[]" class="form-control">
+                                                        </div>
+                                                        <div class="form-group col-6 form-group-calender">
+                                                            <label for="name1">Hisob raqam nomi</label>
+                                                            <div class="position-relative">
+                                                                <input type="text" class="form-control" id="name4" name="name4[]">
+                                                                <a href="#" onclick="rekRm(event)"><i class="text-danger fas fa-times"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>`
+            }
+            // console.log(rCount)
+        }
+        function rekRm(event){
+            event.preventDefault();
+            var rCount=document.querySelectorAll("#bank-creditials .row").length;
+            var ev=event.target;
+            while (!ev.classList.contains("form-group-calender")){
+                ev=ev.parentElement;
+                console.log(ev)
+            }
+            if (rCount>1){
+                ev=ev.parentElement.parentElement.removeChild(ev.parentElement);
+            }
+        }
+    </script>
+   <%- include('./includes/end.ejs') %>

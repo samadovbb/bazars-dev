@@ -1,0 +1,121 @@
+<%- include('./includes/head.ejs') %>
+
+<body class="layout-light side-menu overlayScroll">
+
+<main class="main-content">
+    <div class="container-fluid">
+        <div class=" checkout wizard8 global-shadow border px-sm-50 px-20 mb-30 bg-white radius-xl w-100">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-5">
+                            <div class="checkout-progress-indicator ">
+                                <div class="checkout-progress justify-content-center px-0">
+                                    <div class="step current" id="1">
+                                        <span>1</span>
+
+                                    </div>
+                                    <div class="step" id="2">
+                                        <span>2</span>
+
+                                    </div>
+                                    <div class="step" id="3">
+                                        <span>3</span>
+
+                                    </div>
+                                    <div class="step" id="4">
+                                        <span>4</span>
+                                    </div>
+                                </div>
+                                <div class="card-header border-bottom-0">
+                                    <h4>Account yarating</h4>
+                                    <div class="div">
+                                        <img class="svg w-100" src="/img/svg/progress1.svg" alt="img">
+                                    </div>
+                                </div>
+                            </div><!-- checkout -->
+                        </div>
+                        <div class="col-xl-7 col-lg-8 col-sm-10">
+                            <div class="card checkout-shipping-form h-100vh">
+                                <div class="card-header border-bottom-0 align-content-start pb-sm-0 pb-1 px-0">
+                                    <h4 class="fw-500">1. Marhamat, account yarating</h4>
+                                    <p class="text-danger" id="form-error"></p>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="edit-profile__body">
+                                        <form onsubmit="sendSms()">
+                                            <div class="form-group">
+                                                <label for="name1">Login</label>
+                                                <input name="login" type="text" class="form-control" id="login" placeholder="Usename">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="name2">Telefon raqamingiz</label>
+                                                <input name="phoneNumber" type="text" class="form-control" id="phoneNumber" placeholder="+998">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="name2">Elektron pochtangiz</label>
+                                                <input name="mail" type="email" class="form-control" id="mail" placeholder="vendor@bazars.uz">
+                                            </div>
+                                            <div class="form-group create-passord">
+                                                <label for="password">Parol</label>
+                                                <input name="password" type="password" class="form-control" id="password" placeholder="Password">
+                                                <span class="create-passord-warn">6 ta belgidan kam bo'lmagan parol o'ylab toping</span>
+                                            </div>
+                                            <div class="form-group create-passord">
+                                                <label for="confirmPassword">Parolni tasdiqlang</label>
+                                                <input name="confirmPassword" type="password" class="form-control" id="confirmPassword" placeholder="Password">
+                                                <span class="create-passord-warn">Parol esda qolishi uchun uni qayta kiriting</span>
+                                            </div>
+                                            <div class="button-group d-flex pt-20 mb-20 justify-content-md-end justify-content-center">
+                                                <a href="#" onclick="sendSms()" class="btn btn-primary btn-default btn-squared text-capitalize text-white">Keyingi qadam<i class="ml-10 mr-0 las la-arrow-right"></i></a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div><!-- ends: card -->
+                        </div><!-- ends: col -->
+                    </div>
+                </div><!-- ends: col -->
+            </div>
+        </div><!-- End: .global-shadow-->
+    </div>
+</main>
+<div class="modal-basic modal fade show" id="sms-check" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content modal-bg-white ">
+            <div class="modal-header">
+                <h6 class="modal-title">Sms kodni kiriting</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span data-feather="x"></span></button>
+            </div>
+            <div class="modal-body">
+                <p>Ushbu +998 xx xxx xx xx raqamiga SMS kod yuborildi!</p>
+                <p class="text-danger" id="sms-error"></p>
+                <div class="form-group">
+                    <label for="sms-code">Sms kodni kiriting &nbsp;&nbsp;&nbsp; <a href="#" id="sms-time-limit">90</a> </label>
+                    <input type="text" class="form-control" id="sms-code" maxlength="6" placeholder="000000">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" type="button" onclick="checkSms()" class="btn btn-primary btn-sm">Tekshirish</a>
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="overlayer">
+        <span class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </span>
+</div>
+<div class="overlay-dark-sidebar"></div>
+
+<%- include('./includes/end.ejs') %>
+<script>
+
+</script>

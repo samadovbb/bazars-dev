@@ -1,0 +1,21 @@
+{
+  "app": {
+    "PORT": 8787,
+    "secret": "I told you long ago on the road"
+  },
+  "db": {
+    "host": "207.180.201.175",
+    "username": "bazars",
+    "password": "We_Will_Never_Give_Up_Before_Win@2022"
+  },
+  "local": {
+    "host": "localhost",
+    "username": "root",
+    "password": "f&1123581321"
+  },
+  "sms_sender": {
+    "URL": "https://notify.eskiz.uz/api/message/sms/send/",
+    "login": "",
+    "password": ""
+  }
+}
