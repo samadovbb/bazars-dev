@@ -406,196 +406,46 @@
                 </div>
 
                 <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3">
-                    <div class="col">
-                        <div class="product-card">
-                            <div class="product-media">
-                                <div class="product-label">
-                                    <label class="label-text off">-5%</label>
-                                    <label class="label-text new">New</label>
+                    <% for(let i = 0; i < products.length; i++) { %>
+                        <div class="col">
+                            <div class="product-card">
+                                <div class="product-media">
+                                    <div class="product-label">
+                                        <label class="label-text off">-5%</label>
+                                        <label class="label-text new">New</label>
+                                    </div>
+                                    <button class="product-wish wish" style="display: flex; flex-direction: column; justify-content: start; align-items: center;">
+                                        <i style="border-radius: 5px;" class="fas fa-shopping-cart p-2 m-2 bg-success text-white"></i>
+                                        <i style="display: block; margin-top: 8px;" class="fas fa-heart"></i>
+                                    </button>
+                                    <a class="product-image" href="product-video.html"><img src="/images/product/01.jpg" alt="product"></a>
+                                    <div class="product-widget"><a title="Product Compare" href="compare.html"
+                                                                   class="fas fa-random"></a><a title="Product Video"
+                                                                                                href="https://youtu.be/9xzcVxSBbG8" class="venobox fas fa-play" data-autoplay="true"
+                                                                                                data-vbtype="video"></a><a title="Product View" href="#" class="fas fa-eye"
+                                                                                                                           data-bs-toggle="modal" data-bs-target="#product-view"></a></div>
                                 </div>
-                                <button class="product-wish wish" style="display: flex; flex-direction: column; justify-content: start; align-items: center;">
-                                    <i style="border-radius: 5px;" class="fas fa-shopping-cart p-2 m-2 bg-success text-white"></i>
-                                    <i style="display: block; margin-top: 8px;" class="fas fa-heart"></i>
-                                </button>
-                                <a class="product-image" href="product-video.html"><img src="/images/product/01.jpg" alt="product"></a>
-                                <div class="product-widget"><a title="Product Compare" href="compare.html"
-                                                               class="fas fa-random"></a><a title="Product Video"
-                                                                                            href="https://youtu.be/9xzcVxSBbG8" class="venobox fas fa-play" data-autoplay="true"
-                                                                                            data-vbtype="video"></a><a title="Product View" href="#" class="fas fa-eye"
-                                                                                                                       data-bs-toggle="modal" data-bs-target="#product-view"></a></div>
-                            </div>
-                            <div class="product-content" style="text-align: left;">
-                                <p class="product-name" style="margin-bottom: 0;"><a href="product-video.html">fresh green chilis</a></p>
-                                <p class="product-name" style="margin-bottom: 0;"> <a href="product-video.html"> Bu yerda uzun nom </a> </p>
-                                <p class="product-price" style="font-size: 18px; display: inline-block; margin-bottom: 0;">
-                                    <del style="font-size: 14px;">15 000 000 so'm</del>
-                                    <br>
-                                    <span>12 450 000 <small>so'm</small></span>
-                                </p>
-                                <p class="bg-secondary text-white px-1" style="display: inline-block; font-size: 14px; border-radius: 3px;"> 120 000 so'm x12 </p>
-                                <a href="#" style="font-size: 14px; text-align: left;" class="text-muted"> <i class="fas fa-store"></i> Korzinka Discount </a>
-                                <button
-                                        class="product-add btn-success" title="Add to Cart">Sotib olish</button>
-                                <div class="product-action"><button class="action-minus" title="Quantity Minus"><i
-                                                class="icofont-minus"></i></button><input class="action-input"
-                                                                                          title="Quantity Number" type="text" name="quantity" value="1"><button
-                                            class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="product-card">
-                            <div class="product-media">
-                                <div class="product-label">
-                                    <label class="label-text off">-5%</label>
-                                    <label class="label-text new">New</label>
-                                </div>
-                                <button class="product-wish wish" style="display: flex; flex-direction: column; justify-content: start; align-items: center;">
-                                    <i style="border-radius: 5px;" class="fas fa-shopping-cart p-2 m-2 bg-success text-white"></i>
-                                    <i style="display: block; margin-top: 8px;" class="fas fa-heart"></i>
-                                </button>
-                                <a class="product-image" href="product-video.html"><img src="/images/product/01.jpg" alt="product"></a>
-                                <div class="product-widget"><a title="Product Compare" href="compare.html"
-                                                               class="fas fa-random"></a><a title="Product Video"
-                                                                                            href="https://youtu.be/9xzcVxSBbG8" class="venobox fas fa-play" data-autoplay="true"
-                                                                                            data-vbtype="video"></a><a title="Product View" href="#" class="fas fa-eye"
-                                                                                                                       data-bs-toggle="modal" data-bs-target="#product-view"></a></div>
-                            </div>
-                            <div class="product-content" style="text-align: left;">
-                                <p class="product-name" style="margin-bottom: 0;"><a href="product-video.html">fresh green chilis</a></p>
-                                <p class="product-name" style="margin-bottom: 0;"> <a href="product-video.html"> Bu yerda uzun nom </a> </p>
-                                <p class="product-price" style="font-size: 18px; display: inline-block; margin-bottom: 0;">
-                                    <del style="font-size: 14px;">15 000 000 so'm</del>
-                                    <br>
-                                    <span>12 450 000 <small>so'm</small></span>
-                                </p>
-                                <p class="bg-secondary text-white px-1" style="display: inline-block; font-size: 14px; border-radius: 3px;"> 120 000 so'm x12 </p>
-                                <a href="#" style="font-size: 14px; text-align: left;" class="text-muted"> <i class="fas fa-store"></i> Korzinka Discount </a>
-                                <button
-                                        class="product-add btn-success" title="Add to Cart">Sotib olish</button>
-                                <div class="product-action"><button class="action-minus" title="Quantity Minus"><i
-                                                class="icofont-minus"></i></button><input class="action-input"
-                                                                                          title="Quantity Number" type="text" name="quantity" value="1"><button
-                                            class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
+                                <div class="product-content" style="text-align: left;">
+                                    <p class="product-name" style="margin-bottom: 0;"><a href="/product/<%= products[i].ProductID%>"><%= products[i].ProductName %></a></p>
+                                    <p class="product-name" style="margin-bottom: 0;"> <a href="product-video.html"> <%= products[i].ShortDescription %> </a> </p>
+                                    <p class="product-price" style="font-size: 18px; display: inline-block; margin-bottom: 0;">
+                                        <del style="font-size: 14px;">2 500 dollar</del>
+                                        <br>
+                                        <span><%= products[i].Cost %><small>$</small></span>
+                                    </p>
+                                    <p class="bg-secondary text-white px-1" style="display: inline-block; font-size: 14px; border-radius: 3px;"> 1500 dollar x12 </p>
+                                    <a href="#" style="font-size: 14px; text-align: left;" class="text-muted"> <i class="fas fa-store"></i> Korzinka Discount </a>
+                                    <button
+                                            class="product-add btn-success" title="Add to Cart">Sotib olish</button>
+                                    <div class="product-action"><button class="action-minus" title="Quantity Minus"><i
+                                                    class="icofont-minus"></i></button><input class="action-input"
+                                                                                              title="Quantity Number" type="text" name="quantity" value="1"><button
+                                                class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="product-card">
-                            <div class="product-media">
-                                <div class="product-label">
-                                    <label class="label-text off">-5%</label>
-                                    <label class="label-text new">New</label>
-                                </div>
-                                <button class="product-wish wish" style="display: flex; flex-direction: column; justify-content: start; align-items: center;">
-                                    <i style="border-radius: 5px;" class="fas fa-shopping-cart p-2 m-2 bg-success text-white"></i>
-                                    <i style="display: block; margin-top: 8px;" class="fas fa-heart"></i>
-                                </button>
-                                <a class="product-image" href="product-video.html"><img src="/images/product/01.jpg" alt="product"></a>
-                                <div class="product-widget"><a title="Product Compare" href="compare.html"
-                                                               class="fas fa-random"></a><a title="Product Video"
-                                                                                            href="https://youtu.be/9xzcVxSBbG8" class="venobox fas fa-play" data-autoplay="true"
-                                                                                            data-vbtype="video"></a><a title="Product View" href="#" class="fas fa-eye"
-                                                                                                                       data-bs-toggle="modal" data-bs-target="#product-view"></a></div>
-                            </div>
-                            <div class="product-content" style="text-align: left;">
-                                <p class="product-name" style="margin-bottom: 0;"><a href="product-video.html">fresh green chilis</a></p>
-                                <p class="product-name" style="margin-bottom: 0;"> <a href="product-video.html"> Bu yerda uzun nom </a> </p>
-                                <p class="product-price" style="font-size: 18px; display: inline-block; margin-bottom: 0;">
-                                    <del style="font-size: 14px;">15 000 000 so'm</del>
-                                    <br>
-                                    <span>12 450 000 <small>so'm</small></span>
-                                </p>
-                                <p class="bg-secondary text-white px-1" style="display: inline-block; font-size: 14px; border-radius: 3px;"> 120 000 so'm x12 </p>
-                                <a href="#" style="font-size: 14px; text-align: left;" class="text-muted"> <i class="fas fa-store"></i> Korzinka Discount </a>
-                                <button
-                                        class="product-add btn-success" title="Add to Cart">Sotib olish</button>
-                                <div class="product-action"><button class="action-minus" title="Quantity Minus"><i
-                                                class="icofont-minus"></i></button><input class="action-input"
-                                                                                          title="Quantity Number" type="text" name="quantity" value="1"><button
-                                            class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="product-card">
-                            <div class="product-media">
-                                <div class="product-label">
-                                    <label class="label-text off">-5%</label>
-                                    <label class="label-text new">New</label>
-                                </div>
-                                <button class="product-wish wish" style="display: flex; flex-direction: column; justify-content: start; align-items: center;">
-                                    <i style="border-radius: 5px;" class="fas fa-shopping-cart p-2 m-2 bg-success text-white"></i>
-                                    <i style="display: block; margin-top: 8px;" class="fas fa-heart"></i>
-                                </button>
-                                <a class="product-image" href="product-video.html"><img src="/images/product/01.jpg" alt="product"></a>
-                                <div class="product-widget"><a title="Product Compare" href="compare.html"
-                                                               class="fas fa-random"></a><a title="Product Video"
-                                                                                            href="https://youtu.be/9xzcVxSBbG8" class="venobox fas fa-play" data-autoplay="true"
-                                                                                            data-vbtype="video"></a><a title="Product View" href="#" class="fas fa-eye"
-                                                                                                                       data-bs-toggle="modal" data-bs-target="#product-view"></a></div>
-                            </div>
-                            <div class="product-content" style="text-align: left;">
-                                <p class="product-name" style="margin-bottom: 0;"><a href="product-video.html">fresh green chilis</a></p>
-                                <p class="product-name" style="margin-bottom: 0;"> <a href="product-video.html"> Bu yerda uzun nom </a> </p>
-                                <p class="product-price" style="font-size: 18px; display: inline-block; margin-bottom: 0;">
-                                    <del style="font-size: 14px;">15 000 000 so'm</del>
-                                    <br>
-                                    <span>12 450 000 <small>so'm</small></span>
-                                </p>
-                                <p class="bg-secondary text-white px-1" style="display: inline-block; font-size: 14px; border-radius: 3px;"> 120 000 so'm x12 </p>
-                                <a href="#" style="font-size: 14px; text-align: left;" class="text-muted"> <i class="fas fa-store"></i> Korzinka Discount </a>
-                                <button
-                                        class="product-add btn-success" title="Add to Cart">Sotib olish</button>
-                                <div class="product-action"><button class="action-minus" title="Quantity Minus"><i
-                                                class="icofont-minus"></i></button><input class="action-input"
-                                                                                          title="Quantity Number" type="text" name="quantity" value="1"><button
-                                            class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="product-card">
-                            <div class="product-media">
-                                <div class="product-label">
-                                    <label class="label-text off">-5%</label>
-                                    <label class="label-text new">New</label>
-                                </div>
-                                <button class="product-wish wish" style="display: flex; flex-direction: column; justify-content: start; align-items: center;">
-                                    <i style="border-radius: 5px;" class="fas fa-shopping-cart p-2 m-2 bg-success text-white"></i>
-                                    <i style="display: block; margin-top: 8px;" class="fas fa-heart"></i>
-                                </button>
-                                <a class="product-image" href="product-video.html"><img src="/images/product/01.jpg" alt="product"></a>
-                                <div class="product-widget"><a title="Product Compare" href="compare.html"
-                                                               class="fas fa-random"></a><a title="Product Video"
-                                                                                            href="https://youtu.be/9xzcVxSBbG8" class="venobox fas fa-play" data-autoplay="true"
-                                                                                            data-vbtype="video"></a><a title="Product View" href="#" class="fas fa-eye"
-                                                                                                                       data-bs-toggle="modal" data-bs-target="#product-view"></a></div>
-                            </div>
-                            <div class="product-content" style="text-align: left;">
-                                <p class="product-name" style="margin-bottom: 0;"><a href="product-video.html">fresh green chilis</a></p>
-                                <p class="product-name" style="margin-bottom: 0;"> <a href="product-video.html"> Bu yerda uzun nom </a> </p>
-                                <p class="product-price" style="font-size: 18px; display: inline-block; margin-bottom: 0;">
-                                    <del style="font-size: 14px;">15 000 000 so'm</del>
-                                    <br>
-                                    <span>12 450 000 <small>so'm</small></span>
-                                </p>
-                                <p class="bg-secondary text-white px-1" style="display: inline-block; font-size: 14px; border-radius: 3px;"> 120 000 so'm x12 </p>
-                                <a href="#" style="font-size: 14px; text-align: left;" class="text-muted"> <i class="fas fa-store"></i> Korzinka Discount </a>
-                                <button
-                                        class="product-add btn-success" title="Add to Cart">Sotib olish</button>
-                                <div class="product-action"><button class="action-minus" title="Quantity Minus"><i
-                                                class="icofont-minus"></i></button><input class="action-input"
-                                                                                          title="Quantity Number" type="text" name="quantity" value="1"><button
-                                            class="action-plus" title="Quantity Plus"><i class="icofont-plus"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <% } %>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">

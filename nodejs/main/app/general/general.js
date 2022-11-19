@@ -16,4 +16,10 @@ app.use('/category', require('./routes/category'))
 // vendors
 app.use('/vendors', require('./routes/vendors'))
 
+// product category
+app.use('/product/:id', require('./routes/productlist'))
+
+// live stream
+app.use('/live/product/:id', require('./routes/live'))
+
 module.exports = app
