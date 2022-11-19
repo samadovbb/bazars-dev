@@ -37,25 +37,25 @@
                                         </div>
                                         <div class="card-body p-0">
                                             <div class="edit-profile__body">
-                                                <form>
+                                                <form action="" method="POST">
                                                     <div id="bank-creditials">
                                                         <div class="row">
                                                             <div class="form-group col-6">
                                                                 <label for="name1">Bank nomi</label>
-                                                                <input type="text" id="name1" name="name1[]" class="form-control">
+                                                                <input type="text" id="name1" name="BankName[]" class="form-control">
                                                             </div>
                                                             <div class="form-group col-6">
                                                                 <label for="name1">Bank kodi (MFO)</label>
-                                                                <input type="text" id="name1" name="name2[]" class="form-control">
+                                                                <input type="text" id="name1" name="MFO[]" class="form-control">
                                                             </div>
                                                             <div class="form-group col-6">
                                                                 <label for="name1">Hisob raqam</label>
-                                                                <input type="text" id="name1" name="name3[]" class="form-control">
+                                                                <input type="text" id="name1" name="InvoiceNumber[]" class="form-control">
                                                             </div>
                                                             <div class="form-group col-6 form-group-calender">
                                                                 <label for="name1">Hisob raqam nomi</label>
                                                                 <div class="position-relative">
-                                                                    <input type="text" class="form-control" id="name4" name="name4[]">
+                                                                    <input type="text" class="form-control" id="name4" name="InvoiceName[]">
                                                                     <a href="#" onclick="rekRm(event)"><i class="text-danger fas fa-times"></i></a>
                                                                 </div>
                                                             </div>
@@ -63,8 +63,8 @@
                                                     </div>
                                                     <button type="button" onclick="rekAdd()" class="btn btn-block btn-outline-light"> <i class="fa fa-plus"></i> Yangi hisob raqam qo'shish</button>
                                                     <div class="button-group d-flex pt-3 mb-20 justify-content-between flex-wrap">
-                                                        <a href="singup-vendor-s3.html" class="btn btn-light btn-default btn-squared fw-400 text-capitalize"><i class="las la-arrow-left mr-10"></i>Oldingi qadam</a>
-                                                        <a href="singup-vendor-s4.html" class="btn btn-primary btn-default btn-squared text-capitalize text-white">Keyingi qadam<i class="ml-10 mr-0 las la-arrow-right"></i></a>
+                                                        <a href="stp3" class="btn btn-light btn-default btn-squared fw-400 text-capitalize"><i class="las la-arrow-left mr-10"></i>Oldingi qadam</a>
+                                                        <button type="submit" class="btn btn-primary btn-default btn-squared text-capitalize text-white">Keyingi qadam<i class="ml-10 mr-0 las la-arrow-right"></i></button>
                                                     </div>
                                                 </form>
                                             </div>
