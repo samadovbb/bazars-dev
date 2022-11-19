@@ -1,0 +1,1142 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mahsulot qo'shish</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- inject:css-->
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/bootstrap/bootstrap.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/daterangepicker.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/fontawesome.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/footable.standalone.min.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/fullcalendar@5.2.0.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/jquery-jvectormap-2.0.5.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/jquery.mCustomScrollbar.min.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/leaflet.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/line-awesome.min.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/MarkerCluster.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/MarkerCluster.Default.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/select2.min.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/slick.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/star-rating-svg.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/trumbowyg.min.css">
+
+    <link rel="stylesheet" href="/assets/vendor_assets/css/wickedpicker.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- endinject -->
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
+    <style>
+        .select2-container--default .select2-selection--single{
+            height: 40px !important;
+        }
+        table.table-rounded tbody tr:hover td {
+            background-color: rgba(95, 99, 242, 0.1);
+        }
+        .checkbox-text{
+            text-transform: none;
+        }
+    </style>
+</head>
+
+<body class="layout-light side-menu overlayScroll">
+<div class="mobile-search">
+    <form class="search-form">
+        <span data-feather="search"></span>
+        <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+    </form>
+</div>
+
+<div class="mobile-author-actions"></div>
+<header class="header-top">
+    <nav class="navbar navbar-light">
+        <div class="navbar-left">
+            <a href="" class="sidebar-toggle">
+                <img class="svg" src="/img/svg/bars.svg" alt="img"></a>
+            <a class="navbar-brand" href="#"><img class="dark" src="/img/logo_dark.png" alt="svg"><img class="light"
+                                                                                                      src="/img/logo_white.png" alt="img"></a>
+            <form action="/" class="search-form">
+                <span data-feather="search"></span>
+                <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+            </form>
+            <div class="top-menu">
+
+                <div class="strikingDash-top-menu position-relative">
+                    <ul>
+
+                        <li class="mega-item has-subMenu">
+                            <a href="#" class="active">Pages</a>
+                            <ul class="megaMenu-wrapper megaMenu-small">
+
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="users-datatable.html" class="">Users
+                                                Table</a>
+                                        </li>
+                                        <li>
+                                            <a href="gallery.html" class="">Gallery 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="gallery2.html" class="">Gallery 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html" class="">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="faq.html" class="">FAQ's</a>
+                                        </li>
+                                        <li>
+                                            <a href="search.html" class="">Search
+                                                Results</a>
+                                        </li>
+                                        <li>
+                                            <a href="maintenance.html" class="">Coming
+                                                Soon</a>
+                                        </li>
+                                        <li>
+                                            <a href="404.html" class="">404</a>
+                                        </li>
+                                        <li>
+                                            <a href="maintenance.html" class="">
+                                                <span class="menu-text">Maintenance</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="login.html" class="">
+                                                <span class="menu-text">Log In</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="sign-up.html" class="">
+                                                <span class="menu-text">Sign Up</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="blank.html" class=" active">
+                                                <span class="menu-text">Blank</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- ends: navbar-left -->
+
+        <div class="navbar-right">
+            <ul class="navbar-right__menu">
+                <li class="nav-search d-none">
+                    <a href="#" class="search-toggle">
+                        <i class="la la-search"></i>
+                        <i class="la la-times"></i>
+                    </a>
+                    <form action="/" class="search-form-topMenu">
+                        <span class="search-icon" data-feather="search"></span>
+                        <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+                    </form>
+                </li>
+                <li class="nav-message">
+                    <div class="dropdown-custom">
+                        <a href="javascript:;" class="nav-item-toggle">
+                            <span data-feather="mail"></span></a>
+                        <div class="dropdown-wrapper">
+                            <h2 class="dropdown-wrapper__title">Messages <span
+                                        class="badge-circle badge-success ml-1">2</span></h2>
+                            <ul>
+                                <li class="author-online has-new-message">
+                                    <div class="user-avater">
+                                        <img src="/img/team-1.png" alt="">
+                                    </div>
+                                    <div class="user-message">
+                                        <p>
+                                            <a href="" class="subject stretched-link text-truncate"
+                                               style="max-width: 180px;">Web Design</a>
+                                            <span class="time-posted">3 hrs ago</span>
+                                        </p>
+                                        <p>
+                                                <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                                                    dolor amet cosec Lorem ipsum</span>
+                                            <span class="msg-count badge-circle badge-success badge-sm">1</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="author-offline has-new-message">
+                                    <div class="user-avater">
+                                        <img src="/img/team-1.png" alt="">
+                                    </div>
+                                    <div class="user-message">
+                                        <p>
+                                            <a href="" class="subject stretched-link text-truncate"
+                                               style="max-width: 180px;">Web Design</a>
+                                            <span class="time-posted">3 hrs ago</span>
+                                        </p>
+                                        <p>
+                                                <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                                                    dolor amet cosec Lorem ipsum</span>
+                                            <span class="msg-count badge-circle badge-success badge-sm">1</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="author-online has-new-message">
+                                    <div class="user-avater">
+                                        <img src="/img/team-1.png" alt="">
+                                    </div>
+                                    <div class="user-message">
+                                        <p>
+                                            <a href="" class="subject stretched-link text-truncate"
+                                               style="max-width: 180px;">Web Design</a>
+                                            <span class="time-posted">3 hrs ago</span>
+                                        </p>
+                                        <p>
+                                                <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                                                    dolor amet cosec Lorem ipsum</span>
+                                            <span class="msg-count badge-circle badge-success badge-sm">1</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="author-offline">
+                                    <div class="user-avater">
+                                        <img src="/img/team-1.png" alt="">
+                                    </div>
+                                    <div class="user-message">
+                                        <p>
+                                            <a href="" class="subject stretched-link text-truncate"
+                                               style="max-width: 180px;">Web Design</a>
+                                            <span class="time-posted">3 hrs ago</span>
+                                        </p>
+                                        <p>
+                                                <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                                                    dolor amet cosec Lorem ipsum</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="author-offline">
+                                    <div class="user-avater">
+                                        <img src="/img/team-1.png" alt="">
+                                    </div>
+                                    <div class="user-message">
+                                        <p>
+                                            <a href="" class="subject stretched-link text-truncate"
+                                               style="max-width: 180px;">Web Design</a>
+                                            <span class="time-posted">3 hrs ago</span>
+                                        </p>
+                                        <p>
+                                                <span class="desc text-truncate" style="max-width: 215px;">Lorem ipsum
+                                                    dolor amet cosec Lorem ipsum</span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="" class="dropdown-wrapper__more">See All Message</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- ends: nav-message -->
+                <li class="nav-notification">
+                    <div class="dropdown-custom">
+                        <a href="javascript:;" class="nav-item-toggle">
+                            <span data-feather="bell"></span></a>
+                        <div class="dropdown-wrapper">
+                            <h2 class="dropdown-wrapper__title">Notifications <span
+                                        class="badge-circle badge-warning ml-1">4</span></h2>
+                            <ul>
+                                <li
+                                        class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
+                                    <div class="nav-notification__type nav-notification__type--primary">
+                                        <span data-feather="inbox"></span>
+                                    </div>
+                                    <div class="nav-notification__details">
+                                        <p>
+                                            <a href="" class="subject stretched-link text-truncate"
+                                               style="max-width: 180px;">James</a>
+                                            <span>sent you a message</span>
+                                        </p>
+                                        <p>
+                                            <span class="time-posted">5 hours ago</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li
+                                        class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
+                                    <div class="nav-notification__type nav-notification__type--secondary">
+                                        <span data-feather="upload"></span>
+                                    </div>
+                                    <div class="nav-notification__details">
+                                        <p>
+                                            <a href="" class="subject stretched-link text-truncate"
+                                               style="max-width: 180px;">James</a>
+                                            <span>sent you a message</span>
+                                        </p>
+                                        <p>
+                                            <span class="time-posted">5 hours ago</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li
+                                        class="nav-notification__single nav-notification__single--unread d-flex flex-wrap">
+                                    <div class="nav-notification__type nav-notification__type--success">
+                                        <span data-feather="log-in"></span>
+                                    </div>
+                                    <div class="nav-notification__details">
+                                        <p>
+                                            <a href="" class="subject stretched-link text-truncate"
+                                               style="max-width: 180px;">James</a>
+                                            <span>sent you a message</span>
+                                        </p>
+                                        <p>
+                                            <span class="time-posted">5 hours ago</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="nav-notification__single nav-notification__single d-flex flex-wrap">
+                                    <div class="nav-notification__type nav-notification__type--info">
+                                        <span data-feather="at-sign"></span>
+                                    </div>
+                                    <div class="nav-notification__details">
+                                        <p>
+                                            <a href="" class="subject stretched-link text-truncate"
+                                               style="max-width: 180px;">James</a>
+                                            <span>sent you a message</span>
+                                        </p>
+                                        <p>
+                                            <span class="time-posted">5 hours ago</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="nav-notification__single nav-notification__single d-flex flex-wrap">
+                                    <div class="nav-notification__type nav-notification__type--danger">
+                                        <span data-feather="heart"></span>
+                                    </div>
+                                    <div class="nav-notification__details">
+                                        <p>
+                                            <a href="" class="subject stretched-link text-truncate"
+                                               style="max-width: 180px;">James</a>
+                                            <span>sent you a message</span>
+                                        </p>
+                                        <p>
+                                            <span class="time-posted">5 hours ago</span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="" class="dropdown-wrapper__more">See all incoming activity</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- ends: .nav-notification -->
+                <li class="nav-settings">
+                    <div class="dropdown-custom">
+                        <a href="javascript:;" class="nav-item-toggle">
+                            <span data-feather="settings"></span></a>
+                        <div class="dropdown-wrapper dropdown-wrapper--large">
+                            <ul class="list-settings">
+                                <li class="d-flex">
+                                    <div class="mr-3"><img src="/img/mail.png" alt=""></div>
+                                    <div class="flex-grow-1">
+                                        <h6>
+                                            <a href="" class="stretched-link">All Features</a>
+                                        </h6>
+                                        <p>Introducing Increment subscriptions </p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="mr-3"><img src="/img/color-palette.png" alt=""></div>
+                                    <div class="flex-grow-1">
+                                        <h6>
+                                            <a href="" class="stretched-link">Themes</a>
+                                        </h6>
+                                        <p>Third party themes that are compatible</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="mr-3"><img src="/img/home.png" alt=""></div>
+                                    <div class="flex-grow-1">
+                                        <h6>
+                                            <a href="" class="stretched-link">Payments</a>
+                                        </h6>
+                                        <p>We handle billions of dollars</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="mr-3"><img src="/img/video-camera.png" alt=""></div>
+                                    <div class="flex-grow-1">
+                                        <h6>
+                                            <a href="" class="stretched-link">Design Mockups</a>
+                                        </h6>
+                                        <p>Share planning visuals with clients</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="mr-3"><img src="/img/document.png" alt=""></div>
+                                    <div class="flex-grow-1">
+                                        <h6>
+                                            <a href="" class="stretched-link">Content Planner</a>
+                                        </h6>
+                                        <p>Centralize content gethering and editing</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="mr-3"><img src="/img/microphone.png" alt=""></div>
+                                    <div class="flex-grow-1">
+                                        <h6>
+                                            <a href="" class="stretched-link">Diagram Maker</a>
+                                        </h6>
+                                        <p>Plan user flows & test scenarios</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- ends: .nav-settings -->
+                <li class="nav-support">
+                    <div class="dropdown-custom">
+                        <a href="javascript:;" class="nav-item-toggle">
+                            <span data-feather="help-circle"></span></a>
+                        <div class="dropdown-wrapper">
+                            <div class="list-group">
+                                <span>Documentation</span>
+                                <ul>
+                                    <li>
+                                        <a href="">How to customize admin</a>
+                                    </li>
+                                    <li>
+                                        <a href="">How to use</a>
+                                    </li>
+                                    <li>
+                                        <a href="">The relation of vertical spacing</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-group">
+                                <span>Payments</span>
+                                <ul>
+                                    <li>
+                                        <a href="">How to customize admin</a>
+                                    </li>
+                                    <li>
+                                        <a href="">How to use</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-group">
+                                <span>Content Planner</span>
+                                <ul>
+                                    <li>
+                                        <a href="">How to customize admin</a>
+                                    </li>
+                                    <li>
+                                        <a href="">How to use</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- ends: .nav-support -->
+                <li class="nav-flag-select">
+                    <div class="dropdown-custom">
+                        <a href="javascript:;" class="nav-item-toggle"><img src="/img/flag.png" alt=""
+                                                                            class="rounded-circle"></a>
+                        <div class="dropdown-wrapper dropdown-wrapper--small">
+                            <a href=""><img src="/img/eng.png" alt=""> English</a>
+                            <a href=""><img src="/img/ger.png" alt=""> German</a>
+                            <a href=""><img src="/img/spa.png" alt=""> Spanish</a>
+                            <a href=""><img src="/img/tur.png" alt=""> Turkish</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- ends: .nav-flag-select -->
+                <li class="nav-author">
+                    <div class="dropdown-custom">
+                        <a href="javascript:;" class="nav-item-toggle"><img src="/img/author-nav.jpg" alt=""
+                                                                            class="rounded-circle"></a>
+                        <div class="dropdown-wrapper">
+                            <div class="nav-author__info">
+                                <div class="author-img">
+                                    <img src="/img/author-nav.jpg" alt="" class="rounded-circle">
+                                </div>
+                                <div>
+                                    <h6>Abdullah Bin Talha</h6>
+                                    <span>UI Designer</span>
+                                </div>
+                            </div>
+                            <div class="nav-author__options">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <span data-feather="user"></span> Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span data-feather="settings"></span> Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span data-feather="key"></span> Billing</a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span data-feather="users"></span> Activity</a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <span data-feather="bell"></span> Help</a>
+                                    </li>
+                                </ul>
+                                <a href="" class="nav-author__signout">
+                                    <span data-feather="log-out"></span> Sign Out</a>
+                            </div>
+                        </div>
+                        <!-- ends: .dropdown-wrapper -->
+                    </div>
+                </li>
+                <!-- ends: .nav-author -->
+            </ul>
+            <!-- ends: .navbar-right__menu -->
+            <div class="navbar-right__mobileAction d-md-none">
+                <a href="#" class="btn-search">
+                    <span data-feather="search"></span>
+                    <span data-feather="x"></span></a>
+                <a href="#" class="btn-author-action">
+                    <span data-feather="more-vertical"></span></a>
+            </div>
+        </div>
+        <!-- ends: .navbar-right -->
+    </nav>
+</header>
+<main class="main-content">
+
+    <%- include('../includes/navbar.ejs') %>
+
+    <div class="contents">
+
+        <div class="container-fluid">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="mx-sm-30 mx-20 ">
+                            <!-- Start: card -->
+                            <div class="card  add-product p-sm-30 p-20 my-30" style="background: #fff;">
+                                <div class="card-header">
+                                    <h6 class="fw-500 " style="text-transform: none;">Mahsulot qo'shish</h6>
+                                </div>
+                                <!-- Start: card body -->
+                                <div class="add-product__body px-sm-40 px-20">
+                                    <!-- Start: form -->
+                                    <form method="post" action="" >
+                                        <div class="form-group">
+                                            <label for="Depots" style="text-transform: none;"><b class="text-danger">*</b>Omborlar </label>
+                                            <select name="DepotID" class=" form-control" id="Depots">
+                                                <option value="0">Mahsulot joylashgan omborni tanlang</option>
+                                                <% for (let i = 0; i < depot.length; i++) { %>
+                                                    <option value="<%= depot[i].DepotID %>"><%= depot[i].DepotName %></option>
+                                                <% }%>
+                                            </select>
+                                        </div>
+                                        <!-- form group 2 -->
+                                        <div class="form-group ">
+                                            <div class="countryOption">
+                                                <label for="countryOption">
+                                                    <b class="text-danger">*</b>Kategoriya
+                                                </label>
+                                                <select class="js-example-basic-single js-states form-control" id="countryOption">
+                                                    <option value="0">Mahsulot kategoriyasini tanlang</option>
+                                                    <% for (const category of categories) { %>
+                                                        <option value="<%= category.CategoryID %>"><%= category.CategoryName %></option>
+                                                    <%} %>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <!-- form group -->
+                                        <div class="form-group">
+                                            <label for="name1" style="text-transform: none;"><b class="text-danger">*</b>Mahsulot nomi</label>
+                                            <input type="text" class="form-control" id="name1" placeholder="">
+                                        </div>
+                                        <!-- form group -->
+                                        <div class="form-group">
+                                            <label for="namet" style="text-transform: none;"><b class="text-danger">*</b>Mahsulotning qisqacha tavsifi</label>
+                                            <input name="ShortDescription" type="text" class="form-control" id="namet" placeholder="">
+                                        </div>
+                                        <div class="form-group  mb-0">
+                                            <label for="asduz" style="text-transform: none;"> <b class="text-danger">*</b>Mahsulot haqida</label>
+                                            <textarea name="Description" class="form-control" id="asduz" rows="3" placeholder=""></textarea>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-lg-6 col-sm-12">
+                                                <label for="Miqdorii" style="text-transform: none;"><b class="text-danger">*</b>Miqdori</label>
+                                                <input name="Quantity" type="text" class="form-control" id="Miqdorii" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-6 col-sm-12">
+                                                <label for="name2">O'lchov birligi</label>
+                                                <div class=" select-style2">
+                                                    <div class="atbd-select ">
+                                                        <select name="select-alerts2" id="select-alerts2" class="form-control ">
+                                                            <option value="kg">O'lchov birligini tanlang</option>
+                                                            <option value="kg">Kg</option>
+                                                            <option value="piece">Dona</option>
+                                                            <option value="block">Blok</option>
+                                                            <option value="liter">Litr</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-sm-12">
+                                                <label for="name2">Brend</label>
+                                                <div class=" select-style2">
+                                                    <div class="atbd-select ">
+                                                        <select name="select-alerts2" id="select-alerts2" class="form-control ">
+                                                            <option value="ID">Brandni tanlang</option>
+                                                            <option value="ID">Coca cola</option>
+                                                            <option value="ID">Zara</option>
+                                                            <option value="ID">Gucci</option>
+                                                            <option value="ID">Apple</option>
+                                                            <option value="ID">Samsung</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <input class="checkbox" type="checkbox" id="brend">
+                                                <label for="brend">
+                                                    <span class="checkbox-text">
+                                                                           Mavjud emas
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-sm-12">
+                                                <label for="Barcode" style="text-transform: none;">Barcode</label>
+                                                <input type="text" class="form-control" id="Barcode" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-lg-6 col-sm-12">
+                                                <label for="Model" class="il-gray fs-14 fw-500 align-center" style="text-transform: none;">Model</label>
+                                                <select class="form-control " id="Model">
+                                                    <option value="model1">1</option>
+                                                    <option value="model2">2</option>
+                                                </select>
+                                                <input class="checkbox" type="checkbox" id="model">
+                                                <label for="model">
+                                                    <span class="checkbox-text">
+                                                         Mavjud emas
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-sm-12">
+                                                <label for="ish" class="il-gray fs-14 fw-500 align-center" style="text-transform: none;">Ishlab chiqarilgan davlat</label>
+                                                <select class="form-control " id="ish">
+                                                    <option value="UZB">UZB</option>
+                                                    <option value="China"> China</option>
+                                                    <option value="USA">USA</option>
+                                                </select>
+                                                <input class="checkbox" type="checkbox" id="ich">
+                                                <label for="ich">
+                                                    <span class="checkbox-text">
+                                                                               Mavjud emas
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="form-group col-lg-6 col-sm-12">
+                                                <label for="QQS" style="text-transform: none;"><b class="text-danger">*</b>QQS</label>
+                                                <select class="form-control " id="QQS">
+                                                    <option value="null" >Mavjud emas</option>
+                                                    <option value="0.15">15%</option>
+                                                </select>
+                                            </div>
+                                            <!-- form group 3 -->
+                                            <div class="form-group col-lg-6 col-sm-12 quantity-appearance">
+                                                <label style="text-transform: none;"><b class="text-danger">*</b>Narxi (so'm)</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                            <span class="input-group-text" id="basic-addon1">
+                                                            <span data-feather="dollar-sign"></span></span>
+                                                    </div>
+                                                    <div class="pt_Quantity">
+                                                        <input name="cost" type="number" class="form-control" min="0" max="100" step="1" value="0" data-inc="1">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- form group 4 -->
+                                            <div class="form-group col-lg-6 col-sm-12 quantity-appearance">
+                                                <label style="text-transform: none;">Chegirma</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                                            <span class="input-group-text" id="basic-addon2">
+                                                                                <span data-feather="percent"></span></span>
+                                                    </div>
+                                                    <div class="pt_Quantity">
+                                                        <input name="Discount" type="number" class="form-control" min="0" max="100" step="1" value="0" data-inc="1">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group col-lg-6 col-sm-12">
+                                                <label for="weight" style="text-transform: none;"><b class="text-danger">*</b>O'g'irligi (kg)</label>
+                                                <input name="weight" type="text" class="form-control" id="weight" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-6 col-sm-12">
+                                                <label for="uzun" style="text-transform: none;"><b class="text-danger">*</b>Uzunlik(sm)</label>
+                                                <input name="length" type="text" class="form-control" id="uzun" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-6 col-sm-12">
+                                                <label for="keng" style="text-transform: none;"><b class="text-danger">*</b>Kengligi(sm)</label>
+                                                <input name="breadth" type="text" class="form-control" id="keng" placeholder="">
+                                            </div>
+                                            <div class="form-group col-lg-6 col-sm-12">
+                                                <label for="baland" style="text-transform: none;"><b class="text-danger">*</b>Balandligi(sm)</label>
+                                                <input name="heigth" type="text" class="form-control" id="baland" placeholder="">
+                                            </div>
+
+
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="checkbox-theme-default custom-checkbox ">
+                                                <input class="checkbox" type="checkbox" id="check-un1">
+                                                <label for="check-un1">
+                                                    <span class="checkbox-text">
+                                                        Variantlar
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <label for="countryOption" class="il-gray fs-14 fw-500 align-center">Xususiyat</label>
+                                            <select class="form-control px-15" id="countryOption">
+                                                <option value="1">O'lchami</option>
+                                                <option value="2">Tuzilish</option>
+                                                <option value="3">Quvvati</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label style="text-transform: none;"><b class="text-danger">*</b>Mahsulot(tovar)ni qaysi kanallarga sotishni va necha puldan sotishni belgilang</label>
+                                            <div class="table4">
+                                                <div class="table-responsive">
+                                                    <table class="table mb-0">
+                                                        <thead>
+                                                        <tr class="userDatatable-header">
+                                                            <th>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="custom-checkbox  check-all">
+                                                                        <input class="checkbox" type="checkbox" id="check-4">
+                                                                        <label for="check-4">
+                                                                            <span class="ml-20 userDatatable-title">Kanallar</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </th>
+                                                            <th>
+                                                                <span class="userDatatable-title" style="text-transform: none;">Narx holati</span>
+                                                            </th>
+                                                            <th>
+                                                                <span class="userDatatable-title" style="text-transform: none;">Narxi(so'm)</span>
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex">
+                                                                    <div class="userDatatable__imgWrapper d-flex align-items-center">
+                                                                        <div class="checkbox-group-wrapper">
+                                                                            <div class="checkbox-group d-flex">
+                                                                                <div class="checkbox-theme-default custom-checkbox checkbox-group__single d-flex">
+                                                                                    <input class="checkbox" type="checkbox" id="check-grp-52">
+                                                                                    <label for="check-grp-52"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="userDatatable-content">
+                                                                        Marketplace
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="userDatatable-content">
+                                                                    <select class="form-control px-15" id="naxholati">
+                                                                        <option>O'zgartirish</option>
+                                                                        <option>Yangi narx</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="userDatatable-content">
+                                                                    <input type="number" class="form-control" min="0" value="500000" data-inc="1" disabled>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex">
+                                                                    <div class="userDatatable__imgWrapper d-flex align-items-center">
+                                                                        <div class="checkbox-group-wrapper">
+                                                                            <div class="checkbox-group d-flex">
+                                                                                <div class="checkbox-theme-default custom-checkbox checkbox-group__single d-flex">
+                                                                                    <input class="checkbox" type="checkbox" id="check-grp-52">
+                                                                                    <label for="check-grp-52"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="userDatatable-content">
+                                                                        Onlayn do'kon
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="userDatatable-content">
+                                                                    <select class="form-control px-15" id="naxholati">
+                                                                        <option>O'zgartirish</option>
+                                                                        <option selected>Yangi narx</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="userDatatable-content">
+                                                                    <input type="number" class="form-control" min="0" value="700000" data-inc="1" >
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex">
+                                                                    <div class="userDatatable__imgWrapper d-flex align-items-center">
+                                                                        <div class="checkbox-group-wrapper">
+                                                                            <div class="checkbox-group d-flex">
+                                                                                <div class="checkbox-theme-default custom-checkbox checkbox-group__single d-flex">
+                                                                                    <input class="checkbox" type="checkbox" id="check-grp-52">
+                                                                                    <label for="check-grp-52"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="userDatatable-content">
+                                                                        Telegram bot
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="userDatatable-content">
+                                                                    <select class="form-control px-15" id="naxholati">
+                                                                        <option>O'zgartirish</option>
+                                                                        <option>Yangi narx</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="userDatatable-content">
+                                                                    <input type="number" class="form-control" min="0" value="500000" data-inc="1" disabled>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <div class="d-flex">
+                                                                    <div class="userDatatable__imgWrapper d-flex align-items-center">
+                                                                        <div class="checkbox-group-wrapper">
+                                                                            <div class="checkbox-group d-flex">
+                                                                                <div class="checkbox-theme-default custom-checkbox checkbox-group__single d-flex">
+                                                                                    <input class="checkbox" type="checkbox" id="check-grp-52">
+                                                                                    <label for="check-grp-52"></label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="userDatatable-content">
+                                                                        Oflayn do'kon
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="userDatatable-content">
+                                                                    <select class="form-control px-15" id="naxholati">
+                                                                        <option>O'zgartirish</option>
+                                                                        <option selected>Yangi narx</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="userDatatable-content">
+                                                                    <input type="number" class="form-control" min="0" value="700000" data-inc="1" >
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- form group 5 -->
+
+
+
+                                    </form>
+                                    <!-- End: form -->
+                                </div>
+                                <!-- End: card body -->
+                            </div>
+                            <!-- End: card -->
+                            <!-- Start: card -->
+                            <div class="card add-product p-sm-30 p-20 " style="background: #fff;">
+                                <div class="card-header col-12">
+                                    <h6 class="fw-500" style="text-transform: none;"><b class="text-danger">*</b>Mahsulot rasmi yoki videosi</h6>
+                                </div>
+                                <div class="row">
+                                    <!-- Start: product body -->
+                                    <div class="add-product__body-img px-sm-40 px-20 col-lg-6 col-sm-12">
+                                        <label for="upload" class="file-upload__label">
+                                                                <span class="upload-product-img px-10 d-block">
+                                                                    <span class="file-upload">
+                                                                        <span data-feather="upload"></span>
+                                                                        <input id="upload" class="file-upload__input" type="file" accept="image/png, image/gif, image/jpeg" name="file-upload">
+                                                                    </span>
+                                                                    <span class="pera">Rasmlarni yuklang  </span>
+                                                                    <span>yoki <a href="#" class="color-secondary">olib qoying</a> </span>
+                                                                </span>
+                                        </label>
+                                        <div class="upload-product-media d-flex justify-content-between align-items-center mt-25">
+                                            <div class="upload-media-area d-flex">
+                                                <img src="/img/food-restaurant-media.png" alt="img">
+                                                <div class=" upload-media-area__title  d-flex flex-wrap align-items-center ml-10">
+                                                    <div>
+                                                        <p>Product_image.jpg</p>
+                                                        <span>68.8 KB</span>
+                                                    </div>
+                                                    <div class="upload-media-area__btn">
+                                                        <button type="button" class="transparent rounded-circle wh-30 border-0 color-danger">
+                                                            <span data-feather="trash-2"></span></button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="add-product__body-img px-sm-40 px-20  col-lg-6 col-sm-12">
+                                        <label for="upload" class="file-upload__label">
+                                                                <span class="upload-product-img px-10 d-block">
+                                                                    <span class="file-upload">
+                                                                        <span data-feather="upload"></span>
+                                                                        <input id="upload" class="file-upload__input"  accept="video/mp4,video/x-m4v" type="file" name="file-upload">
+                                                                    </span>
+                                                                    <span class="pera">Videolarni yuklang  </span>
+                                                                    <span>yoki <a href="#" class="color-secondary">olib qoying</a> </span>
+                                                                </span>
+                                        </label>
+                                        <div class="upload-product-media d-flex justify-content-between align-items-center mt-25">
+                                            <div class="upload-media-area d-flex">
+                                                <img src="/img/food-restaurant-media.png" alt="img">
+                                                <div class=" upload-media-area__title  d-flex flex-wrap align-items-center ml-10">
+                                                    <div>
+                                                        <p>Product_video.mp4</p>
+                                                        <span>6.8 MB</span>
+                                                    </div>
+                                                    <div class="upload-media-area__btn">
+                                                        <button type="button" class="transparent rounded-circle wh-30 border-0 color-danger">
+                                                            <span data-feather="trash-2"></span></button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-sm-40 px-20">
+                                        <div class="form-group status-radio add-product-status-radio mb-20">
+                                            <label class="mb-15"><b class="text-danger">*</b>Holati</label>
+                                            <div class="d-flex">
+                                                <div class="radio-horizontal-list d-flex flex-wrap">
+
+
+                                                    <div class="radio-theme-default custom-radio ">
+                                                        <input class="radio" type="radio" name="radio-optional" value=0 id="radio-hl1">
+                                                        <label for="radio-hl1">
+                                                            <span class="radio-text">Aktiv</span>
+                                                        </label>
+                                                    </div>
+
+
+
+
+                                                    <div class="radio-theme-default custom-radio ">
+                                                        <input class="radio" type="radio" name="radio-optional" value=0 id="radio-hl2">
+                                                        <label for="radio-hl2">
+                                                            <span class="radio-text">Muzlatilgan</span>
+                                                        </label>
+                                                    </div>
+                                                    <!-- <div class="radio-theme-default custom-radio ">
+                                                        <input class="radio" type="radio" name="radio-optional" value=0 id="radio-hl22">
+                                                        <label for="radio-hl22">
+                                                            <span class="radio-text">qolmagan</span>
+                                                        </label>
+                                                    </div> -->
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End: product body -->
+                            </div>
+                            <!-- End: card -->
+
+                            <!-- Start: button group -->
+                            <div class="button-group add-product-btn d-flex justify-content-end my-40">
+
+
+
+                                <button class="btn btn-outline-danger btn-default btn-squared fw-400 text-none">Bekor qilish
+                                </button>
+
+
+                                <button class="btn btn-outline-primary btn-default btn-squared text-none">Saqlash
+                                </button>
+
+                                <button class="btn btn-primary btn-default btn-squared text-none">Saqlash va yangi qo'shish
+                                </button>
+
+
+
+                            </div>
+                            <!-- End: button group -->
+                        </div>
+                    </div>
+                    <!-- ends: col-lg-12 -->
+                </div>
+            </div>
+
+
+        </div>
+        <footer class="footer-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-copyright">
+                            <p>2020 @<a href="#">Aazztech</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-menu text-right">
+                            <ul>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Team</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ends: .Footer Menu -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+</main>
+<div id="overlayer">
+        <span class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </span>
+</div>
+<div class="overlay-dark-sidebar"></div>
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDduF2tLXicDEPDMAtC6-NLOekX0A5vlnY"></script>
+<!-- inject:js-->
+<script src="/assets/vendor_assets/js/jquery/jquery-3.5.1.min.js"></script>
+<script src="/assets/vendor_assets/js/jquery/jquery-ui.js"></script>
+<script src="/assets/vendor_assets/js/bootstrap/popper.js"></script>
+<script src="/assets/vendor_assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="/assets/vendor_assets/js/moment/moment.min.js"></script>
+<script src="/assets/vendor_assets/js/accordion.js"></script>
+<script src="/assets/vendor_assets/js/autoComplete.js"></script>
+<script src="/assets/vendor_assets/js/Chart.min.js"></script>
+<script src="/assets/vendor_assets/js/charts.js"></script>
+<script src="/assets/vendor_assets/js/daterangepicker.js"></script>
+<script src="/assets/vendor_assets/js/drawer.js"></script>
+<script src="/assets/vendor_assets/js/dynamicBadge.js"></script>
+<script src="/assets/vendor_assets/js/dynamicCheckbox.js"></script>
+<script src="/assets/vendor_assets/js/feather.min.js"></script>
+<script src="/assets/vendor_assets/js/footable.min.js"></script>
+<script src="/assets/vendor_assets/js/fullcalendar@5.2.0.js"></script>
+<script src="/assets/vendor_assets/js/google-chart.js"></script>
+<script src="/assets/vendor_assets/js/jquery-jvectormap-2.0.5.min.js"></script>
+<script src="/assets/vendor_assets/js/jquery-jvectormap-world-mill-en.js"></script>
+<script src="/assets/vendor_assets/js/jquery.countdown.min.js"></script>
+<script src="/assets/vendor_assets/js/jquery.filterizr.min.js"></script>
+<script src="/assets/vendor_assets/js/jquery.magnific-popup.min.js"></script>
+<script src="/assets/vendor_assets/js/jquery.mCustomScrollbar.min.js"></script>
+<script src="/assets/vendor_assets/js/jquery.peity.min.js"></script>
+<script src="/assets/vendor_assets/js/jquery.star-rating-svg.min.js"></script>
+<script src="/assets/vendor_assets/js/leaflet.js"></script>
+<script src="/assets/vendor_assets/js/leaflet.markercluster.js"></script>
+<script src="/assets/vendor_assets/js/loader.js"></script>
+<script src="/assets/vendor_assets/js/message.js"></script>
+<script src="/assets/vendor_assets/js/moment.js"></script>
+<script src="/assets/vendor_assets/js/muuri.min.js"></script>
+<script src="/assets/vendor_assets/js/notification.js"></script>
+<script src="/assets/vendor_assets/js/popover.js"></script>
+<script src="/assets/vendor_assets/js/select2.full.min.js"></script>
+<script src="/assets/vendor_assets/js/slick.min.js"></script>
+<script src="/assets/vendor_assets/js/trumbowyg.min.js"></script>
+<script src="/assets/vendor_assets/js/trumbowyg.upload64.min.js"></script>
+<script src="/assets/vendor_assets/js/wickedpicker.min.js"></script>
+<script src="/assets/theme_assets/js/drag-drop.js"></script>
+<script src="/assets/theme_assets/js/footable.js"></script>
+<script src="/assets/theme_assets/js/full-calendar.js"></script>
+<script src="/assets/theme_assets/js/googlemap-init.js"></script>
+<script src="/assets/theme_assets/js/icon-loader.js"></script>
+<script src="/assets/theme_assets/js/jvectormap-init.js"></script>
+<script src="/assets/theme_assets/js/leaflet-init.js"></script>
+<script src="/assets/theme_assets/js/main.js"></script>
+<!-- endinject-->
+</body>
+
+</html>

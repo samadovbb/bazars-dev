@@ -1,3 +1,6 @@
 module.exports = async (req, res) => {
-    res.render('./sign/stp4.ejs')
+    req.session.isAuth = true
+    req.session.VendorID = 'AABB'
+    return res.redirect('/vendor/dashboard')
+    res.render('./sign/stp4')
 }
